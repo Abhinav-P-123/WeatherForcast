@@ -1,0 +1,12 @@
+.html {
+  height: 100vh;
+  width: 100vw;
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description-styles {
+  text-align: center;
+  text-transform: capitalize;
+}
