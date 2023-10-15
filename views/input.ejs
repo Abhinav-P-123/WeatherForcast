@@ -18,13 +18,18 @@
 
       <div class="input-group rounded mb-3">
         <input type="search" class="form-control rounded" placeholder="City" aria-label="Search"
-          aria-describedby="search-addon" name="cityName" />
+          aria-describedby="search-addon" name="cityName" value="<%= city %>" />
         <button type="submit" class="m-2 border-0 rounded-2 p-0" style="text-decoration: none">
           <span class="input-group-text border-0 fw-bold" id="search-addon">
             Check!
           </span>
         </button>
       </div>
+      <% if (error) { %>
+        <p style="color: red;">
+          <%= errorM %>
+        </p>
+        <% } %>
     </div>
   </form>
 </body>
